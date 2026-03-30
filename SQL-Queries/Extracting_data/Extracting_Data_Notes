@@ -1,1 +1,192 @@
+# SQL Basics – Quick & Simple Guide 🚀
+
+This guide explains some very common SQL commands in a **super simple way**.
+Think of a **table** like a spreadsheet with rows and columns.
+
+Example table:
+
+| Name | Age | Marks |
+| ---- | --- | ----- |
+| Ravi | 10  | 80    |
+| Sita | 11  | 90    |
+| Arun | 10  | 70    |
+
+---
+
+# 1️⃣ SELECT *
+
+### What it does
+
+Gets **everything** from the table.
+
+### Example
+
+```sql
+SELECT * FROM students;
+```
+
+### Simple meaning
+
+Bring **all rows and all columns**.
+
+### Kid example 🧸
+
+Like saying:
+
+> “Teacher, give me the **whole notebook**.”
+
+---
+
+# 2️⃣ SELECT column_name
+
+### What it does
+
+Gets **only the columns you ask for**.
+
+### Example
+
+```sql
+SELECT name, age FROM students;
+```
+
+### Simple meaning
+
+Bring only **Name and Age**, not Marks.
+
+### Kid example 🧸
+
+Like saying:
+
+> “Teacher, I only want the **names list**, not marks.”
+
+---
+
+# 3️⃣ ORDER BY
+
+### What it does
+
+Sorts the data.
+
+### Example
+
+```sql
+SELECT * FROM students
+ORDER BY marks;
+```
+
+### Simple meaning
+
+Arranges data from **small to big**.
+
+Descending example:
+
+```sql
+SELECT * FROM students
+ORDER BY marks DESC;
+```
+
+This arranges data from **big to small**.
+
+### Kid example 🧸
+
+Like arranging toys:
+
+* small → big
+  or
+* big → small
+
+---
+
+# 4️⃣ LIMIT
+
+### What it does
+
+Shows only **some rows from the top**.
+
+### Example
+
+```sql
+SELECT * FROM students
+LIMIT 2;
+```
+
+### Simple meaning
+
+Show only the **first 2 rows**.
+
+### Kid example 🧸
+
+Like saying:
+
+> “Give me only **first 2 chocolates** 🍫”
+
+---
+
+# 5️⃣ OFFSET
+
+### What it does
+
+Skips some rows before showing results.
+
+### Example
+
+```sql
+SELECT * FROM students
+LIMIT 2 OFFSET 1;
+```
+
+### Simple meaning
+
+Skip first row, then show next 2 rows.
+
+### Kid example 🧸
+
+Like saying:
+
+> “Skip the first student, show me the next two.”
+
+---
+
+# 6️⃣ ROUND
+
+### What it does
+
+Rounds numbers.
+
+### Example
+
+```sql
+SELECT ROUND(85.678, 2);
+```
+
+### Output
+
+85.68
+
+### Simple meaning
+
+Keeps only **2 numbers after decimal**.
+
+### Kid example 🧸
+
+Like changing:
+85.678 → 85.68
+because we want **short and neat numbers**
+
+---
+
+# ✅ Summary Table
+
+| Command       | Meaning              |
+| ------------- | -------------------- |
+| SELECT *      | Get everything       |
+| SELECT column | Get selected columns |
+| ORDER BY      | Sort data            |
+| LIMIT         | Show few rows        |
+| OFFSET        | Skip rows            |
+| ROUND         | Make numbers shorter |
+
+---
+
+🎯 These commands help you **read data clearly, quickly, and neatly** from any SQL table.
 
